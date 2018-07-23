@@ -4,6 +4,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'NewProggie/NewProggie-Color-Scheme'
+Plug 'flazz/vim-colorschemes'
 call plug#end()
 nnoremap <Space> :
 set nu
@@ -38,7 +39,9 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='newproggie'
 
 "Theme
-colo newproggie
+"colo newproggie
+colorscheme molokai
+syntax on
 
 "The following lines are courtesy praveenv253.
 "Enable characters to demarcate the kind of whitespace used.
