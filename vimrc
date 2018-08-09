@@ -39,8 +39,8 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='newproggie'
 
 "Theme
-"colo newproggie
-colorscheme molokai
+colo newproggie
+"colorscheme molokai_dark
 syntax on
 
 "The following lines are courtesy praveenv253.
@@ -84,3 +84,6 @@ au BufNewFile *.cpp 0r ~/.vim/templates/template.cpp | let IndentStyle = "cpp"
 "Adding ctags related shortcuts"
 map <C-\> :tab split<Enter>:exec("tag ".expand("<cword>"))<Enter>
 map <C-]> :vsp <Enter>:exec("tag ".expand("<cword>"))<Enter>
+
+"Remove trailing spaces by clicking <F5>"
+:nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
