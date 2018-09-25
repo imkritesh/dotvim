@@ -5,6 +5,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'NewProggie/NewProggie-Color-Scheme'
 Plug 'flazz/vim-colorschemes'
+Plug 'derekwyatt/vim-scala'
 call plug#end()
 nnoremap <Space> :
 set nu
@@ -88,6 +89,6 @@ map <C-]> :vsp <Enter>:exec("tag ".expand("<cword>"))<Enter>
 "Remove trailing spaces by clicking <F5>"
 :nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
-"Ctrl+left and ctrl+right for moving accross tabs
-nnoremap <C-Left> :tabprevious<CR>
-noremap <C-Right> :tabnext<CR>
+"Ctrl+W+left and Ctrl+W+right for moving accross tabs
+nnoremap <C-w><Left> :tabprevious<CR>
+nnoremap <C-w><Right> :tabnext<CR>
