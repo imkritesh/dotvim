@@ -92,3 +92,5 @@ map <C-]> :vsp <Enter>:exec("tag ".expand("<cword>"))<Enter>
 "Ctrl+W+left and Ctrl+W+right for moving accross tabs
 nnoremap <C-w><Left> :tabprevious<CR>
 nnoremap <C-w><Right> :tabnext<CR>
+"Adding roslaunch XML syntax highlighting"
+autocmd BufRead,BufNewFile *.launch setfiletype roslaunch
