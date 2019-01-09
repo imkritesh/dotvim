@@ -10,4 +10,5 @@ echo "Installing powerline fonts..."
 git clone https://github.com/powerline/fonts.git ~/fonts
 cd ~/fonts && ./install.sh && cd ~ && rm -rf fonts
 echo "Updating airline color scheme to newproggie..."
-ln -s ~/.vim/plugins/NewProggie-Color-Scheme/vim-airline-themes/newproggie.vim ~/.vim/plugins/vim-airline-themes/plugin/newproggie.vim
+#ln -s ~/.vim/plugins/NewProggie-Color-Scheme/vim-airline-themes/newproggie.vim ~/.vim/plugins/vim-airline-themes/plugin/newproggie.vim
+ln -s ~/.vim/plugins/NewProggie-Color-Scheme/vim-airline-themes/newproggie.vim ~/.vim/plugins/vim-airline-themes/autoload/airline/themes/newproggie.vim
